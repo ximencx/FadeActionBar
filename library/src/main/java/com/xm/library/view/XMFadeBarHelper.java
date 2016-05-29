@@ -7,9 +7,9 @@ import android.os.Build;
 import android.view.View;
 
 /**
- * 修改背景
- * 作者：ximencx on 2016/5/28 18:25
- * 邮箱：454366460@qq.com
+ * motify bg
+ * user：ximencx on 2016/5/28 18:25
+ * email:454366460@qq.com
  */
 public abstract class XMFadeBarHelper {
 
@@ -24,11 +24,11 @@ public abstract class XMFadeBarHelper {
     private ActionBar mActionBar;
 
     /**
-     * 构造方法 不能为null
+     * custruct method (not null)
      *
-     * @param actionBar    actionbar对象
-     * @param drawable     actionbar背景
-     * @param defaultAlpha 默认背景初始值 如果显示为255 不显示0
+     * @param actionBar    actionbar object
+     * @param drawable     actionbar bg
+     * @param defaultAlpha first value, if show,set value 255,then hide set value 0;
      */
     public XMFadeBarHelper(final ActionBar actionBar, final Drawable drawable, final int defaultAlpha) {
         mActionBar = actionBar;
@@ -65,9 +65,9 @@ public abstract class XMFadeBarHelper {
     }
 
     /**
-     * 设置透明度
+     * set alpha
      *
-     * @param alpha
+     * @param alpha setalpha
      */
     public void setActionBarAlpha(int alpha) {
         //
@@ -77,7 +77,7 @@ public abstract class XMFadeBarHelper {
         //
         View view = mActionBar.getCustomView();
         if (view != null) {
-            //设置actionbar透明背景
+            //set actionbar bg alpha
             if (alpha >= -MAX_ALPHA && alpha < 0) {
                 mDrawable.setAlpha(Math.abs(alpha));
             } else if (alpha < -MAX_ALPHA) {
@@ -85,7 +85,7 @@ public abstract class XMFadeBarHelper {
             } else if (alpha >= 0) {
                 mDrawable.setAlpha(0);
             }
-            //设置actionbar内控件透明
+            //set actionbar view alpha
             int scaleAlpha = alpha * setHeight(view) / MAX_ALPHA;
             if (alpha <= 0) {
                 setViewAlpha(view, MAX_ALPHA);
@@ -98,18 +98,18 @@ public abstract class XMFadeBarHelper {
     }
 
     /**
-     * 批量设置控件内view的alpha值
+     * set actionbar view alpha
      *
-     * @param customView  actionbar布局对象
-     * @param alpha 回调的alpha
+     * @param customView  actionbar customview
+     * @param alpha the alpha of your need
      */
     protected abstract void setViewAlpha(View customView, int alpha);
 
     /**
-     * 返回actionbar需要的缩放高度
+     * set actionbar speed
      *
-     * @param customView
-     * @return
+     * @param customView actionbar custmview
+     * @return the reference of height
      */
     protected abstract int setHeight(View customView);
 

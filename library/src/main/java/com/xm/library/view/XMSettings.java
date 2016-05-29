@@ -6,17 +6,17 @@ import android.content.Context;
 import java.lang.reflect.Field;
 
 /**
- * actinbar工具类
- * 作者：ximencx on 2016/5/28 18:25
- * 邮箱：454366460@qq.com
+ * actinbar tools
+ * user：ximencx on 2016/5/28 18:25
+ * email:454366460@qq.com
  */
 public class XMSettings {
 
     /**
-     * 禁用actionbar显示隐藏动画
-     * show（）hide（）前调用
+     * disable actionbar animotion
+     * before your show orhide
      *
-     * @param actionBar bar对象
+     * @param actionBar actionbar object
      */
     public static void disableABCShowHideAnimation(ActionBar actionBar) {
         try {
@@ -41,10 +41,10 @@ public class XMSettings {
 
 
     /**
-     * 获取状态栏高度
+     * get system statue height
      *
-     * @param context
-     * @return
+     * @param context context
+     * @return statue height
      */
     public static int getStatusBarHeight(Context context) {
         Class<?> c = null;
