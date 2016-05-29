@@ -4,9 +4,9 @@
 
 
 ### 效果图
-![Image of 下拉隐藏]()
-![Image of 上拉渐变]()
-![Image of 效果]()
+![Image of 下拉隐藏](https://github.com/ximencx/FadeActionBar/blob/master/Screenshot/test1.gif)
+![Image of 上拉渐变](https://github.com/ximencx/FadeActionBar/blob/master/Screenshot/test2.gif)
+![Image of 效果](https://github.com/ximencx/FadeActionBar/blob/master/Screenshot/test3.gif)
 
 ## 使用前提
 > 1.注意actionbar的依赖库，目前仅支持
@@ -57,7 +57,7 @@ dependencies {
 }
 ```
 
-#### 2.activity中获取actionbar对象
+#### 2.activity中获取actionbar对象，初始化XMFadeBarHelper类
 
 ```java
     private void initbar() {
