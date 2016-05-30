@@ -178,8 +178,8 @@ public class MainActivity extends Activity implements BGARefreshLayout.BGARefres
     private void initlistview() {
         MyAdapter mAdapter = new MyAdapter(this, R.layout.lv_item_home);
         mAdapter.setDatas(mlist);
-        mlistview.setAdapter(mAdapter);
         mlistview.addHeaderView(initheadview());
+        mlistview.setAdapter(mAdapter);
         //
         initScroll();
     }
