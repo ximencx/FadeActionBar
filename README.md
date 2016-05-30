@@ -1,6 +1,10 @@
 ============
+#简介
 
 开发者使用此依赖，只需要2个方法就可以实现美团外卖中上拉titlebar背景渐变，下拉titlebar隐藏效果
+
+
+============
 
 
 ### 效果图
@@ -8,7 +12,7 @@
 ![Image of 上拉渐变](https://github.com/ximencx/FadeActionBar/blob/master/Screenshot/test2.gif)
 ![Image of 效果](https://github.com/ximencx/FadeActionBar/blob/master/Screenshot/test3.gif)
 
-## 使用前提
+## 准备工作
 > 1.注意actionbar的依赖库，目前仅支持
 
 ```java
@@ -48,12 +52,13 @@ import android.app.ActionBar;
 ```
 
 
-### 基本使用
+### 使用步骤
 
 #### 1.添加Gradle依赖
 
 ```groovy
 dependencies {
+	compile 'com.github.ximencx.fadeactionbar:library:1.0.1'
 }
 ```
 
@@ -132,11 +137,11 @@ dependencies {
 
 ### 关于我
 
-<a  href="https://github.com/ximencx" target="_blank">github主页-ximencx</a> | <a href="mailto:454366460@gmail.com" target="_blank">个人邮箱：454366460@qq.com</a> 
+<a  href="https://github.com/ximencx" target="_blank">github主页-ximencx</a> | <a href="mailto:454366460@qq.com" target="_blank">个人邮箱：454366460@qq.com</a> |<a href="http://blog.csdn.net/ximencx" target="_blank"> CSDN博客：ximencx</a> 
 
 ## License
 
-    Copyright 2015 bingoogolapple
+    Copyright 2015 ximencx
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
