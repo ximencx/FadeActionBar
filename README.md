@@ -8,8 +8,6 @@
 
 
 ### 效果图
-![Image of 下拉隐藏](https://github.com/ximencx/FadeActionBar/blob/master/Screenshot/test1.gif)
-![Image of 上拉渐变](https://github.com/ximencx/FadeActionBar/blob/master/Screenshot/test2.gif)
 ![Image of 效果](https://github.com/ximencx/FadeActionBar/blob/master/Screenshot/test3.gif)
 
 ## 准备工作
